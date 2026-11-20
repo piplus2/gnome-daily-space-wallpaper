@@ -1,0 +1,9 @@
+{
+  "uuid": "daily-space-wallpaper@piplus2.github.io",
+  "name": "Daily Space Wallpaper",
+  "description": "Sets a new space-themed wallpaper every day, picked at random from the NASA Image and Video Library: nebulae, galaxies, planets, the Milky Way and Earth seen from orbit.\n\nImages are chosen to match your screen resolution (up to 4K) and downscaled to save disk space. Use the panel menu to skip to another image or open its NASA page.\n\nNot affiliated with or endorsed by NASA.",
+  "shell-version": ["45", "46", "47", "48", "49"],
+  "url": "https://github.com/piplus2/gnome-daily-space-wallpaper",
+  "settings-schema": "org.gnome.shell.extensions.daily-space-wallpaper",
+  "version-name": "1.0"
+}

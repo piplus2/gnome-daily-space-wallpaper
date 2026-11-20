@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.daily-space-wallpaper"
+          path="/org/gnome/shell/extensions/daily-space-wallpaper/">
+
+    <key name="categories" type="as">
+      <default>['deep-space', 'solar-system', 'earth', 'milky-way']</default>
+      <summary>Enabled image categories</summary>
+    </key>
+
+    <key name="resolution" type="s">
+      <choices>
+        <choice value="auto"/>
+        <choice value="1080p"/>
+        <choice value="1440p"/>
+        <choice value="4k"/>
+      </choices>
+      <default>'auto'</default>
+      <summary>Target resolution</summary>
+      <description>'auto' matches the largest connected monitor, capped at 4K.</description>
+    </key>
+
+    <key name="keep-count" type="i">
+      <range min="1" max="100"/>
+      <default>10</default>
+      <summary>Number of downloaded wallpapers to keep on disk</summary>
+    </key>
+
+    <key name="show-indicator" type="b">
+      <default>true</default>
+      <summary>Show the panel menu</summary>
+    </key>
+
+    <key name="refresh-request" type="i">
+      <default>0</default>
+      <summary>Internal: incremented by the preferences window to request a new wallpaper</summary>
+    </key>
+
+    <key name="last-update" type="s">
+      <default>''</default>
+      <summary>Internal: local date (YYYY-MM-DD) of the last successful update</summary>
+    </key>
+
+    <key name="current-image" type="s">
+      <default>''</default>
+      <summary>Internal: JSON description of the current wallpaper</summary>
+    </key>
+
+    <key name="recent-ids" type="as">
+      <default>[]</default>
+      <summary>Internal: recently used NASA image IDs, to avoid repeats</summary>
+    </key>
+  </schema>
+</schemalist>
